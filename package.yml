@@ -1,0 +1,10 @@
+-  hosts: web
+   tasks:
+     -  name: install ntp
+        apt:
+          name: ntp
+          state: present
+     -  name: install MySqlClient
+        apt:
+          name: mysql-client
+          state: present
